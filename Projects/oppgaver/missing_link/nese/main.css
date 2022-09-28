@@ -1,0 +1,26 @@
+body {
+    background-image: url(fireworks.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration-line: underline;
+    color: rgb(255, 0, 106);
+}
+
+.liste {
+    border: solid black 2px;
+    border-radius: 16px;
+    background: rgba(255, 0, 106, 0.836);
+    width: 500px;
+    margin: auto;
+}
+
+li {
+    font-size: 25px;
+}

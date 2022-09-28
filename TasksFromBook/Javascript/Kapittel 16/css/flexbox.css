@@ -1,0 +1,52 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: cornflowerblue;
+    margin: 0;
+}
+
+.meny {
+    display: flex;
+    flex: row;
+    background-color: cyan;
+}
+
+.meny a {
+    text-align: center;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.meny a:hover {
+    background-color: darkcyan;
+}
+
+/*Flexbox 2*/
+.innpakning2 {
+    width: 700px;
+    min-height: 300px;
+    margin: 50px auto;
+    background-color: #323232;
+    display: flex;
+}
+
+.venstre, .hoyre {
+    margin: 5px;
+}
+
+.venstre {
+    background-color: #c3c3c3;
+    flex-grow: 1;
+}
+
+.hoyre {
+    background-color: #FF6A36;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.innhold2 {
+    flex-grow: 1;
+    background-color: #c3c3c3;
+    margin: 5px;
+}

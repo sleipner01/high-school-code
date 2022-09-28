@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(24, 27, 32);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    flex-flow: row;
+}

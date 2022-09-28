@@ -1,0 +1,17 @@
+body {
+    background-image: url(../bilder/snake.jpg);
+    background-size: 100%;
+    background-position-y: 100%;
+    margin: none;
+    height: 90%;
+    width: 90%;
+}
+
+div {
+    height: 600px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

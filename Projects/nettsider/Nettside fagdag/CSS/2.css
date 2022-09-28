@@ -1,0 +1,60 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dedede;
+    margin: 0;
+}
+
+.header
+{
+    text-align: center;
+    width: 80%;
+    display: block;
+    float: right;
+}
+
+.header h1
+{
+    margin: 20px;
+}
+
+.navbar
+{
+    background-color: #666;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    float: left;
+    position: fixed;
+    position: 0 0;
+    margin-top: 0;
+    display: block;
+    width: 20%;
+    padding-top: 78px; 
+}
+
+.navbar li
+{
+    list-style-type: none;
+}
+
+.navbar a
+{
+    text-decoration-line: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+
+.navbar a:hover
+{
+    background-color: #dedede;
+    color: black;
+}
+
+.navbar a.active
+{
+    background-color: #dedede;
+    color: black;
+}

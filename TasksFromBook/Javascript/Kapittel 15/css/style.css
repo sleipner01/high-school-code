@@ -1,0 +1,44 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: #232323;
+    margin: none;
+    color: white;
+}
+
+.innpakning {
+    margin: auto;
+    width: fit-content;
+}
+
+#canvas {
+    background-color: #111;
+}
+
+#bokstav {
+    width: 30%;
+}
+
+#forgrunnsvindu {
+    background-color:rgba(0, 0, 0, 0.598);
+    padding: 10px;
+    border: solid 2px white;
+    display: initial;
+    position: absolute;
+    top: 60px;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#lukkVideo {
+    margin-top: 15px;
+}
+
+#losningsOrd{
+    padding: 10px;
+    width: 50%;
+    height: 30px;
+    display: absolute;
+    margin: auto;
+    font-size: 30px;;
+}

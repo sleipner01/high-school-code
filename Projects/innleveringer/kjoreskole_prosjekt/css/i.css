@@ -1,0 +1,486 @@
+::-webkit-scrollbar {
+    z-index: 1;
+	width: 10px;
+	background-color: transparent;
+  }
+
+::-webkit-scrollbar-track {
+    background-color: #444;
+  }
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #ccc;
+  }
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #fefefe;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', Arial, sans-serif;
+    overflow-y: scroll;
+    min-height: 100%;
+}
+
+hr {
+    background-color: #444;
+}
+
+.top_back {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    flex-basis: 100%;
+    background: url(../bilder/vei3.jpg) no-repeat;
+    background-size: 100%;
+    background-position: 0% 60%;
+}
+
+.top_back_text {
+    margin-top: 120px;
+    font: 400 80px/1.2 'Merienda One', Helvetica;
+    color: rgba(40,40,40,0.9);
+}
+
+/*Navbar*/
+.navbar{
+	overflow: hidden;
+	position: sticky;
+    flex-basis: 100%;
+    background-color: #444;
+    box-shadow: 0px 2px 4px #666;
+    -webkit-box-shadow: 0px 2px 4px #666;
+	align-items: center;
+	top: 0;
+	order: 2;
+	display: flex;
+    z-index: 1;
+}
+
+.links {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	text-align: center;
+	background-color: transparent;
+    position: relative;
+}
+
+    .links:before
+    {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        border-bottom: 2px solid #fefefe;
+        bottom: 0;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+    }
+
+        .links:hover:before
+        {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+
+.links-active {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	text-align: center;
+	background-color: transparent;
+	position: relative;
+}
+
+    .links-active:before
+    {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        border-bottom: 2px solid #fefefe;
+        bottom: 0;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+    }
+
+        .links-active:hover:before
+        {
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+            border-bottom: 2px solid #fefefe;
+        }
+
+.link_a {
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 22px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;	
+}
+
+/*Filter*/
+.filter-container {
+	width: 100%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	height: fit-content;
+	order: 2;
+	display: flex;
+    flex-direction: row;
+}
+
+.filter	{
+	font-size: 25px;
+}
+
+.search {
+    margin-left: auto;
+
+}
+
+.search-bar {
+    background: url(../bilder/magnifier.png) 100% 50% no-repeat;
+	background-attachment: local;
+	color: #999;
+	font-size: 22px;
+	border-bottom: 1px solid transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 36px;
+    height: 34px;
+    transition: 0.3s;
+}
+
+    .search-bar:hover {
+        border-bottom: 1px solid transparent;
+        cursor: pointer;
+    }
+
+        .search-bar:focus {
+            outline: none;
+            border-bottom: 1px solid #333;
+            transition: 0.3s;
+            touch-action: manipulation;
+            width: 500px;
+            cursor: text;
+        }
+
+.dropdown {
+    font-size: 20px;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #333;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    height: 26px;
+}                    
+        
+.dropdown:focus {        
+    outline: 0;        
+    touch-action: manipulation;        
+}
+
+.add {
+    font-size: 22px;
+    background-color: #ddd;
+    padding: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+    outline: none;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+    .add:active {
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+
+.submit {
+    background-color: #ddd;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: none;
+    outline: none;
+}
+    .submit:hover {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+        -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);                                   
+    }
+
+    .submit:active {
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+
+.main {
+    order: 4;
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    min-height: 200px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.main_i {
+    order: 4;
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.leggtil {
+    order: 1;
+    font-size: 22px;
+}
+
+    .leggtil input {
+        font-size: 18px;
+        margin-bottom: 10px; 
+    }
+
+.kursliste {
+    order: 3;
+    margin-top: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;    
+}
+
+    .kursheader {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-bottom: 1px solid #444;
+    }
+
+        .kursheader div {
+            text-align: center;
+            width: 20%;
+            padding: 18px;
+            font-weight: bold;
+            font-size: 26px;
+        }
+
+    .kursinfo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+        .kursinfo:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+        .kursinfo:nth-child(odd):hover {
+            background-color: #ccc;
+        }
+    
+        .kursinfo:nth-child(even):hover {
+            background-color: #ededed;
+        }
+
+        .kursinfo div {
+            width: 20%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-left: 8px;
+            font-size: 22px; 
+        }
+
+.kjoretoyliste {
+    order: 3;
+    margin-top: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;    
+}
+
+    .kjoretoyheader {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-bottom: 1px solid #444;
+    }
+
+        .kjoretoyheader div {
+            text-align: center;
+            width: 25%;
+            padding: 18px;
+            font-weight: bold;
+            font-size: 26px;
+        }
+
+    .kjoretoyinfo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .kjoretoyinfo:nth-child(odd) {
+        background-color: #ddd;
+    }
+
+    .kjoretoyinfo:nth-child(odd):hover {
+        background-color: #ccc;
+    }
+
+    .kjoretoyinfo:nth-child(even):hover {
+        background-color: #ededed;
+    }
+
+        .kjoretoyinfo div {
+            width: 25%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-left: 8px; 
+            font-size: 22px;
+        }
+
+    .lokaler {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+
+        .lokale {
+            width: 50%;
+
+        }
+
+            .lokale-design {
+                display: flex;
+                flex-direction: column;
+                font-size: 26px;
+                width: 600px;
+                border: solid 4px #444;
+                border-radius: 10px;
+                background: transparent;
+                margin-bottom: 30px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+.code-correct {
+    order: 1;
+    text-decoration-line: underline;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: rgb(0, 0, 0);
+}
+
+.code-failed {
+	order: 1;
+	text-decoration-line: underline;
+	font-size: 18px;
+	margin-bottom: 8px;
+	color: rgb(255, 0, 0);
+}
+
+.footer {
+    order: 5;
+    margin-top: auto;
+    width: 100%;
+    background: url(../bilder/tarmac.jpg) no-repeat;
+    background-size: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 0px 4px #666;
+    -webkit-box-shadow: 0px -2px 4px #666;
+}
+
+    .logo-footer {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        font: 400 80px/1.2 'Merienda One', Helvetica;
+        color: rgba(230,230,230,0.6);
+    }
+
+    .foot-left {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .left-bottom {
+            width: 355px;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 16px;
+            background: rgba(230, 230, 230, 0.0);
+        }
+
+        .left-bottom a {
+            color: white;
+        }
+
+        .left-bottom div {
+            padding-top: 4px;
+        }
+
+    .foot-mid {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+        .mid-bottom {
+            margin-top: auto; 
+        }
+
+    .foot-right {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+        .credits {
+            margin-top: auto;
+        }
+
+        .slogo-footer {
+            display: inline-block;
+            font: 400 30px/1.2 'Merienda One', Helvetica;
+            color: rgba(230,230,230,0.6);
+        }
+
+        .author {
+            margin-bottom: 15px;
+            display: inline-block;
+        }

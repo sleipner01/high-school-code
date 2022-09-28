@@ -1,0 +1,22 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: cornflowerblue;
+    margin: none;
+}
+
+#forgrunnsvindu {
+    background-color: darkgray;
+    padding: 10px;
+    border: 2px solid gray;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 300px;
+}
+
+#lukkVideo {
+    margin-top: 15px;
+}

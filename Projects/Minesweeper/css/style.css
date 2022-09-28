@@ -1,0 +1,26 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: #333;
+    margin: 0;
+}
+
+#brett {
+    display: flex;
+    flex-direction: column;
+}
+
+.rad {
+    background-color: white;
+    height: 100px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+}
+
+.blokk {
+    background-color: grey;
+    margin-right: 2px;
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,91 @@
+/*Det var for lite tid under prøven til å kommentere ordentlig*/
+body {
+    background-color: #DBDBDB;
+    font-family: Helvetica;
+    font-size: 1.2em;
+    margin-left: 30px;
+}
+/*Jeg har brukt margin for å distansere ulike elementer på nettsiden*/
+.header {
+    text-align: center;
+}
+
+.paragraph {
+    color: #343434;
+    border: 2px solid black;
+    padding: 8px;
+    width: 80%;
+    background-color: #FEFEFE;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+.paragraph h3 {
+    color: black;
+    text-decoration-line: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.hover:hover
+{
+    background-color: red;
+}
+
+th {
+    font-weight: bold;
+    background-color: #878787;
+    border: 1px solid #878787;
+    padding: 8px; 
+}
+
+td {
+    border: 1px solid #878787;
+    padding: 6px;
+    background-color: #FEFEFE;
+}
+
+/* Jeg bruker td som hover funksjon, ettersom noe galt kjedde med tr raden.*/
+td:hover
+{
+    background-color: #BBB;
+}
+
+.video {
+    margin-bottom: 30px;
+}
+
+.skjema {
+    border: 2px solid black;
+    width: 25%;
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+
+.skjema h3{
+    text-decoration-line: underline;
+}
+
+input[type="text"] {
+    display: block;
+    margin-top: 0px;
+    padding: 3px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px;
+    background-color: #343434;
+    color: #FEFEFE;
+    font-size: 16px;
+    border: none;
+}

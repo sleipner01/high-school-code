@@ -1,0 +1,242 @@
+body {
+    background-color: #fefefe;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header {
+    flex-basis: 100%;
+    order: 1;
+    padding-left: 25px;
+    background-color: rgba(230, 230, 230, 0.192);
+    display: flex;
+    align-items: center;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 100%;
+}
+
+.child1 {
+    margin: 10px;
+    color: #eee;
+    background-color: #2b616d;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    order: 1;
+    max-width: 420px;
+}
+
+.child2 {
+    margin: 10px;
+    color: #eee;
+    background-color: #2b616d;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 0px;
+    order: 2;
+    height: 500px;
+    max-width: 420px;
+}
+
+.child3 {
+    margin: 10px;
+    color: #eee;
+    background-color: #2b616d;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 0px;
+    order: 3;
+    height: 500px;
+    max-width: 420px;
+}
+
+.subflex {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.baby1 {
+    height: 30px;
+    width: 140px;
+    margin: 5px;
+    background-color: rgb(41, 41, 41);
+    color: rgb(245, 184, 52);
+    line-height: 30px;
+    order: 1;
+    font-weight: bold;
+}
+
+.baby2 {
+    height: 30px;
+    width: 140px;
+    margin: 5px;
+    background-color: #000;
+    color: #fff;
+    line-height: 30px;
+    order: 2;
+    font-weight: bold;
+}
+
+.baby3 {
+    height: 30px;
+    width: 140px;
+    margin: 5px;
+    background-color: #fff;
+    color: rgb(0, 61, 228);
+    line-height: 30px;
+    order: 3;
+    font-weight: bold;
+}
+
+.baby4 {
+    height: 30px;
+    width: 140px;
+    margin: 5px;
+    background-color: #f3fab6;
+    color: #005a31;
+    line-height: 30px;
+    order: 3;
+    font-weight: bold;
+}
+
+.baby5 {
+    height: 30px;
+    width: 140px;
+    margin: 5px;
+    background-color: #f00;
+    color: #0f0;
+    line-height: 30px;
+    order: 3;
+    font-weight: bold;
+}
+
+.baby6 {
+    height: 30px;
+    width: 140px;
+    margin: 5px;
+    background-color: #00f;
+    color: #005a31;
+    line-height: 30px;
+    order: 3;
+    font-weight: bold;
+}
+
+.baby7 {
+    height: 30px;
+    width: 140px;
+    margin: 5px;
+    background-color: rgb(68, 68, 68);
+    color: #000;
+    line-height: 30px;
+    order: 3;
+    font-weight: bold;
+}
+
+.baby8 {
+    height: 30px;
+    width: 140px;
+    margin: 5px;
+    background-color: yellow;
+    color: pink;
+    line-height: 30px;
+    order: 3;
+    font-weight: bold;
+}
+
+.centerhead {
+    text-align: center;
+}
+
+.boldtext {
+    font-weight: bold;
+}
+
+
+.search {
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.search [type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: solid 2px #2b616d;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 0;
+}
+
+.search [type="button"] {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #2b616d;
+    color: #eee;
+    border: solid 2px #2b616d;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 0;
+}
+
+.logo a {
+    color: black;
+    text-decoration-line: none;
+    display: inline-block;
+}
+
+.nav {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #2b616d;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+}
+
+.nav a {
+    display: block;
+    padding: 15px 5px;
+    width: 130px;
+    text-decoration-line: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: #1a505c;
+    color: #eee;
+}
+
+.nav a.active {
+    background-color: #1a505c;
+    color: #eee
+}
+
+p {
+    text-align: left;
+}
+
+.textcol1 {
+    color: red;
+}
+
+.textcol2 {
+    color: yellow;
+}

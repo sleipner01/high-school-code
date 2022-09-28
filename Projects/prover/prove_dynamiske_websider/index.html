@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Min artistside</title>
+</head>
+<body>
+    <h1>Tobias sine favorittartister</h1>
+
+    <!-- Legg til ny artist skjema-->
+    <h2>Legg til en ny artist</h2>
+    <form method="POST" action="php/leggtil.php">
+        <table>
+            <tr>
+                <th>Navn:</th>
+                <td><input type="text" name="navn" placeholder="Artist"></td>
+            </tr>
+            <tr>
+                <th>Sjanger:</th>
+                <td><input type="text" name="sjanger" placeholder="Pop"></td>
+            </tr>
+            <tr>
+                <th>Land:</th>
+                <td><input type="text" name="land" placeholder="Norge"></td>
+            </tr>
+            <tr>
+                <th>Opprettet:</th>
+                <td><input type="number" min="1900" max="2019" step="1" name="opprettet" value="2000"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="leggtil" value="Legg til"></td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Vise artister skjema -->
+    <h2>Vis artist</h2>
+    <form method="POST" action="php/visartist.php">
+    <table>
+        <tr>
+            <td></td>
+            <!-- Denne knappen brukes for å vise alle artistene -->
+            <td><input type="submit" name="visartister" value="Vis alle artister"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

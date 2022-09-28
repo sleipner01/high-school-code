@@ -1,0 +1,118 @@
+body {
+    background-color: #fefefe;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header {
+    flex-basis: 100%;
+    order: 1;
+    padding-left: 25px;
+    background-color: rgba(230, 230, 230, 0.192);
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.search [type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: solid 2px #2b616d;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 0;
+}
+
+.search [type="button"] {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #2b616d;
+    color: #eee;
+    border: solid 2px #2b616d;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 0;
+}
+
+.logo a {
+    color: black;
+    text-decoration-line: none;
+    display: inline-block;
+}
+
+.nav {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #2b616d;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+}
+
+.nav a {
+    display: block;
+    padding: 15px 5px;
+    width: 130px;
+    text-decoration-line: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav a.active {
+    background: #1a505c;
+    color: #eee;
+}
+
+.nav a:hover {
+    background-color: #1a505c;
+    color: #eee;
+}
+.page2 {
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.boks1{
+    text-align: center;
+    width: 45%;
+    height: 250px;
+    background-color: #2b616d;
+    line-height: 100%;
+    margin-right: 5px;
+    color:white;
+    margin-top: 10px;
+}
+.boks2{
+    text-align: center;
+    width: 45%;
+    height: 250px;
+    background-color: #2b616d;
+    line-height: 100%;
+    color: white;
+    margin-top: 10px;
+    
+}
+.boks3{
+    text-align: center;
+    width: 90.25%;
+    height: 100px;
+    background-color: #2b616d;
+    line-height: 100%;
+    margin-top: 10px;
+    color:white;
+}

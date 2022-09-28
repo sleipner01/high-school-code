@@ -1,0 +1,20 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: #444;
+    margin: none;
+    color: white;
+}
+
+p {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.cornFlowerBlue {
+    background-color: cornflowerblue;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}

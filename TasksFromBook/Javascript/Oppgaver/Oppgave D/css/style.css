@@ -1,0 +1,31 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: #333;
+    margin: 0;
+    color: white;
+}
+
+#knapp {
+    font-size: 14px;
+}
+
+#terningFelt {
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#tilbakemelding {
+    font-size: 24px;
+}
+
+.laast {
+    border: solid 4px red;
+}
+.aapen {
+    border: solid 4px transparent;
+}
+
+#kast {
+    font-size: 24px;
+}

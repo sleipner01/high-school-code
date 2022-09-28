@@ -1,0 +1,96 @@
+body
+{
+    background-color: #DADADA; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.header
+{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+nav
+{
+    overflow: hidden;
+    z-index: 1;
+    display: block;
+    position: sticky;
+    top: 0;
+    padding: 8px;
+    background-color: #787878;
+    border: 1px solid #787878;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: 0;
+}
+
+nav a
+{
+    color: white;
+    font-family: Times;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 15px;
+    display: inline-block;
+    text-decoration-line: none;
+}
+
+/*Hei og hå jeg liker ting*/
+.list
+{
+    background-color: #787878;
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 20%;
+    padding: 15px;
+    list-style-type: none;
+}
+
+li
+{
+    font-size: 20px;
+    padding: 3px;
+    margin: 6px;
+    color: white;
+    border-radius: 6px;
+}
+
+video
+{
+    height: 600px;
+    width: 800px;
+}
+
+table
+{
+    border: solid 2px black;
+    border-collapse: collapse;
+    width: 800px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+th
+{
+    border: solid 1px black;
+    background-color: #888;
+    padding: 8px;
+}
+
+td
+{
+    border: solid 1px black;
+    padding: 6px;
+}
+
+.listheader
+{
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    border-bottom: solid 2px black;
+    border-radius: 0px;
+}

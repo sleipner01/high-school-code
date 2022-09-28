@@ -1,0 +1,53 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: cornflowerblue;
+    margin: none;
+}
+
+#canvas {
+    background-color: gray;
+    display: block;
+    margin: auto;
+}
+
+#canvas2 {
+    background-color: gray;
+    display: block;
+    margin: auto;
+}
+
+#canvas3 {
+    background-color: gray;
+    display: block;
+    margin: auto;
+}
+
+#canvas4 {
+    background-color: gray;
+    display: block;
+    margin: auto;
+}
+
+#canvas5 {
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+
+#canvas6 {
+    background-color: gray;
+    display: block;
+    margin: auto;
+}
+
+#canvas7 {
+    background-color: gray;
+    display: block;
+    margin: auto;
+}
+
+#canvas8 {
+    background-color: gray;
+    display: block;
+    margin: auto;
+}

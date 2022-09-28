@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/css.css" />
+</head>
+
+<script>
+    var pinky_x = 0;
+    var pinky_y = 0;
+    var pinky_color = ["rgb(0, 200, 0)", "rgb(0, 230, 0)", "rgb(0, 255, 0)"];
+    var pinky_cur_color = 0;
+
+    function move(x, y) {
+        if(pinky_x + x >= 0 && pinky_x + x + 30 <= 600 && pinky_y + y >= 0 && pinky_y + y + 30 <= 400) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    window.onkeypress = function endre_pinky(event) {
+        switch(event.key) {
+            case "w":
+                if(move(0, -10)){
+                    pinky_y -= 10;
+                }
+                break;
+            case "s":
+            if(move(0, 10)){
+                    pinky_y += 10;
+                }
+                break;
+            case "a":
+            if(move(-10, 0)){
+                    pinky_x -= 10;
+                }
+                break;
+            case "d":
+            if(move(10, 0)){
+                    pinky_x += 10;
+                }
+                break;
+            default: 
+                return;
+                break;
+        }
+
+        pinky_cur_color++;
+
+        if(pinky_cur_color == pinky_color.length) {
+            pinky_cur_color = 0;
+        }
+
+        document.getElementById("pinky").style.background = pinky_color[pinky_cur_color];
+        document.getElementById("pinky").style.left = pinky_x + "px";
+        document.getElementById("pinky").style.top = pinky_y + "px"; 
+    }
+    
+
+</script>
+
+<body>
+    <h1 style="text-align: center; text-decoration-line: underline;">Snake</h1>
+
+    <div class="map" id="game_map">
+        <div class="box" id="pinky"></div>
+    </div>
+</body>
+</html>

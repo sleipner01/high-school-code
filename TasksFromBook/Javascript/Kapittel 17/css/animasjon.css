@@ -1,0 +1,28 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: black;
+    margin: none;
+}
+
+.innpakning {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: #1a4741;
+    position: relative;
+}
+
+.animer {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 5px;
+    background-color: #54ffe8;
+    animation: sprett 2s infinite ease-in-out;
+}
+
+@keyframes sprett {
+    0%  { top: 0px;}
+    50% { top: 295px;}
+    100%{ top: 0px;}
+}

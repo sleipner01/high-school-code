@@ -1,0 +1,107 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+
+    margin: none;
+    animation-name: fargespekter;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    /*animation: fargespekter 10s infinate*/
+}
+
+.boks1 {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    transition-property: width, border-radius;
+    transition-duration: 2s;
+}
+
+.boks1:hover {
+    width: 400px;
+    border-radius: 50%;
+}
+
+.boks2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 30px;
+    margin-left: 0;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    transition: margin-left 3s;
+}
+
+.flyttHoyre {
+    margin-left: 50%;
+}
+
+.flyttVenstre {
+    margin-left: 0;
+}
+
+@keyframes forstorr {
+    from { width: 50px; }
+    to   { width: 100px;}
+}
+
+/*@keyframes forstorr {
+    0% { width: 50px; }
+    100%   { width: 100px;}
+}*/
+
+@keyframes forminsk {
+    from { width: 100px; }
+    to   { width: 50px;  }
+}
+
+.boks3 {
+    width: 50px;
+    height: 150px;
+    background-color: black;
+    animation-duration: 2s;
+    animation-name: forminsk;
+}
+
+.boks3:hover {
+    animation-name: forstorr;
+    width: 100px;
+}
+
+@keyframes fargespekter {
+     0% { background-color: #38c0d3; }
+    25% { background-color: #64bf3e; }
+    50% { background-color: #fea602; }
+    75% { background-color: #ff3454; }
+   100% { background-color: #38c0d3; }
+}
+
+.boks4, .sirkel {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    animation-name: vis;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.boks4 {
+    background-color: red;
+    animation-play-state: running;
+    animation-iteration-count: 5;
+}
+
+.sirkel {
+    background-color: blue;
+    border-radius: 50%;
+    animation-play-state: paused;
+    animation-iteration-count: 3;
+}
+
+@keyframes vis {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}

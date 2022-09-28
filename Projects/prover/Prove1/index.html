@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>...</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <!--Her markerer jeg h1 som en class, for at jeg lettere kan kunne endre spesifikt overskriften ved en senere anledning-->
+    <h1 class="header">VG-Lista</h1>
+    <hr>
+
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Tittel</th>
+            <th>Artist</th>
+            <th>Lengde</th>
+            <th>Spotify</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sweet but Psycho</td>
+            <td>Ava Max</td>
+            <td>3:07</td>
+            <td><a href="https://open.spotify.com/track/25sgk305KZfyuqVBQIahim">Hør sangen</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Diamond Heart</td>
+            <td>Alan Walker, Sophia Somajo</td>
+            <td>3:59</td>
+            <td><a href="https://open.spotify.com/track/4J4zx8xGJpuGndrVc06KaT">Hør sangen</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shallow</td>
+            <td>Lady Gaga, Bradly Cooper</td>
+            <td>3:35</td>
+            <td><a href="https://open.spotify.com/track/2VxeLyX666F8uXCJ0dZF8B">Hør sangen</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Br Alright</td>
+            <td>Dean Lewis</td>
+            <td>3:16</td>
+            <td><a href="https://open.spotify.com/track/3EPXxR3ImUwfayaurPi3cm">Hør sangen</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Emotion</td>
+            <td>Astrid S</td>
+            <td>3:10</td>
+            <td><a href="https://open.spotify.com/track/09rj7jigutgAkveJGpSDBT">Hør Sangen</a></td>
+        </tr>
+    </table>
+
+
+    <!--Jeg markerer video elementet som en div ettersom det er lettere å lage layout, og unne skille mellom ulike deler av nettsiden
+    Da kan jeg også markere av deler av nettsiden som hører sammen.-->
+    <div class="video">
+        <h3 style="text-decoration-line: underline">Årets musikkvideo</h3>
+        <video controls width="500" height="333">
+            <source src="video/ThisIsAmerica.mp4" type="video/mp4">
+            Din nettleser strøtter ikke video-elementet 
+        </video>
+    </div>
+
+
+    <div class="paragraph">
+        <h3>Om VG-lista</h3>
+            <p>
+            VG-lista er Norges offisielle oversikt over de mest solgte og strømmede sangene og albumene <br>
+            i Norge den foregående uken.
+            Listen har eksistert siden 1958 og publiseres hver fredag i VG og som radioprogram på NRK P3. <br>
+            VG-lista består av to lister: singellisten Topp 40 og albumlisten Topp 40. <br>
+            De to listene utarbeides på grunnlag av all musikk som er solgt digitalt og <br> analogt i Norge uken i forveien – samt strømmet i Norge over strømmetjenester som Spotify og Tidal. <br>
+            De 40 mest solgte og strømmede sangene utgjør topp 40-listen, mens de 40 mest populære albumene utgjør topp 40-listen. <br>
+            Listene utarbeides av IFPI Norge for VG og NRK.
+            <br><br>
+            <!--Ettersom dette er en link til en annen web-side så bruker jeg _blank. Jeg bruker også style funksjonen siden jeg bare trenger å ende én verdi.-->
+            Hentet fra Wikipedia (<a href="https://no.wikipedia.org/wiki/VG-lista" target="_blank" style="font-weight: bold">https://no.wikipedia.org/wiki/VG-lista</a>)
+        </p>
+    </div>
+
+
+    <!--Name er for at databasen senere kan kunne plassere info et spesifikt sted. Kjekt å ha.-->
+    <div class="skjema">
+        <h3>Stem for neste ukes artister!</h3>
+        <form method="GET">
+            Artist navn
+            <input type="text" name="artist">
+            Sang navn
+            <input type="text" name="sang">
+            <input type="submit" name="submit" value="Registrer">
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>

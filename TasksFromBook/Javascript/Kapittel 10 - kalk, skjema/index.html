@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    Tittel
+    <input type="text" name="tittel" id="filmTittel" placeholder="Filmens tittel">
+
+    Årstall
+    <input type="number" name="aarsTall" id="aarsTall">
+
+    Beskrivelse
+    <textarea name="beskrivelse" id="beskrivelse" placeholder="Skriv en kort beskrivelse"></textarea>
+
+    Aldersgrense
+    <select name="aldersGrense" id="aldersGrense">
+        <option value="alle">Tillat for alle</option>
+        <option value="syv">7 År</option>
+        <option value="elleve">11 År</option>
+        <option value="femten">15 År</option>
+        <option value="atten">18 År</option>
+    </select>
+
+    Format <br>
+    <input type="checkbox" name="format" value="kino"> Kino <br>
+    <input type="checkbox" name="format" value="dvd"> DVD <br>
+    <input type="checkbox" name="format" value="strommeTjeneste"> Strømmetjeneste <br>
+    <input type="checkbox" name="format" value="tv"> TV <br> <br>
+
+    Fått Oscar<br>
+    <input type="radio" name="oscar" value="Ja" id="oscarJa"> Ja <br>
+    <input type="radio" name="oscar" value="Nei" id="oscarNei" checked> Nei <br><br>
+
+    <button>Registrer</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+html body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: cornflowerblue;
+    margin: none;
+    cursor: none;
+    overflow: hidden;
+}
+
+.innpakning {
+    width: 800px;
+    height: 200px;
+    background-color: black;
+    margin: 50px auto;
+}
+
+.innpakning div {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
+.absolute {
+    position: absolute;
+    left: 50px;
+    top: 5px;
+}
+
+.relative {
+    position: relative;
+    top: -20px;
+}
+.fixed {
+    position: fixed;
+    left: 0;
+    top: 200px;
+}
+
+#sirkel {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

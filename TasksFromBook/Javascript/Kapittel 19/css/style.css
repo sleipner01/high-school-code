@@ -1,0 +1,34 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: #010101;
+    margin: none;
+    height: 100%;
+    width: 100%;
+}
+
+#bildekarusell {
+    width: 854px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    margin: auto 150px;
+}
+
+.bilde {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+@keyframes innFraHoyre {
+    from  { left: 854px; }
+      to  { left: 0px; }
+}
+
+@keyframes utTilVenstre {
+    from    { left: 0px; }
+      to    { left: -854px; }
+}

@@ -1,0 +1,88 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: black;
+    margin: none;
+}
+
+/*
+div {
+    transform: translate(200px,300px);
+}
+*/
+
+.innpakning {
+    background-color: #fff3b1;
+    width: 600px;
+    height: 200px;
+    margin: 100px auto;
+    display: flex;
+}
+
+.boks {
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.boks1 {
+    background-color: #ed1e24;
+    transform: translate(-20px, 50px);
+}
+
+.boks2 {
+    background-color: #371eed;
+    transform: rotate(20deg);
+}
+
+.boks3 {
+    background-color: #1eed37;
+    transform: scale(0.8, 1.6) skew(40deg);
+}
+
+.sirkel {
+    position: absolute;
+    left: 30%;
+    top: 200%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid tomato;
+}
+
+.sirkel1 {
+    animation: skaler 2s infinite linear;
+}
+
+.sirkel2 {
+    animation: skaler 3.5s infinite ease-in-out;
+}
+
+.sirkel3 {
+    animation: skaler 4.2s infinite;
+}
+
+@keyframes skaler {
+    0%  { transform: scale(0); }
+  100%  { transform: scale(6); }
+}
+
+.innpakning2 {
+    width: 600px;
+    height: 200px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bokser {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px;
+    animation: roter linear infinite;
+}
+
+@keyframes roter {
+    0%  { transform: rotate(0deg); background-color: red;       }
+   50%  { transform: rotate(45deg); background-color: yellow;   }
+  100%  { transform: rotate(180deg); background-color: red;}
+}

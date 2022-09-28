@@ -1,0 +1,91 @@
+body {
+    background-image: url('../bilder/background2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: -70px;
+    background-color: #fcfcfc;
+    margin: 0;
+    font-family: 'Bookman old style', Arial, Helvetica, sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header {
+    flex-basis: 100%;
+    order: 1;
+    padding-left: 25px;
+    background-color: rgba(230, 230, 230, 0.192);
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.search [type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: solid 2px grey;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 0;
+}
+
+.search [type="submit"] {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: lightgrey;
+    border: solid 2px grey;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 0;
+}
+
+.logo a {
+    color: black;
+    text-decoration-line: none;
+    display: inline-block;
+}
+
+.nav {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 20%;
+    border: solid black 1px;
+    background-color: rgba(230, 230, 230, 0.37);
+}
+
+.main {
+    flex-basis: 70%;
+    flex: 1;
+    order: 3;
+    border: solid black 1px;
+    background-color: rgba(230, 230, 230, 0.37);
+}
+
+.nav a {
+    display: block;
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 5px;
+    width: 130px;
+    text-decoration-line: none;
+    color: black;
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: white;
+}

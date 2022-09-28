@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> SAS </title>
+    <link rel="stylesheet" href="../CSS stilark/i.css">
+    <link rel="icon" href="../Bilder/logo.png" item-height="3">
+<head>
+
+
+<body>
+   
+    <header>
+        <div>
+            <a href="index.html"><img src="../Bilder/logo.png" alt="SAS" height="50" width="100"></a>
+        
+            <form style="float: right">
+                <input type="text" name="search" placeholder="Skjeeer a'?" class="topsearch">
+            </form>
+        </div>
+    </header>
+
+    <nav>
+        <div class="topnav">              
+            <a href="routes.html"><h3>Våre ruter</h3></a>
+            <a href="planes.html"><h3>Våre fly</h3></a>
+            <a href="eurobonus.html"><h3>Eurobonus</h3></a>
+                <div class="topnav-right">
+                    <a target="_blank" href="https://www.norwegian.no/"><h3>Ryk og reis</h3></a>
+                    <a href="help.html"><h3>Hjelp</h3></a>
+                </div>
+        </div>
+    </nav>
+
+    <aside>
+        <h2>Bestill reise her</h2>
+        <form method="GET" class="bestill">
+            <p>Reise | Fra - Til</p>
+            <input type="text" name="avgang" placeholder="Avgang">
+            <input type="text" name="destinasjon" placeholder="Destinasjon">
+            <p>Dag</p>
+            <input type="datetime" name="datetime" id="1">
+            <p>E-post</p>
+            <input type="email" name="email" id="2">
+            <p>Info</p>
+            <input type="checkbox">
+                <a class="samtykke" target="_blank" href="../Bilder/finger.png">Ved å avhuke denne boksen
+                samtykker du til vår personvernserklæring</a> <br>
+            <input type="submit" name="search" value="Bestill reise" id="3">
+        </form>
+        
+        
+    </aside>
+
+    <section>
+        <div class="ad">
+            <img class="mySlides" src="../Bilder/reklame.png" alt="404 not found" width="642">
+            <img class="mySlides" src="../Bilder/320.png" alt="404 not found" width="642" height="390">
+            <img class="mySlides" src="../Bilder/330.png" alt="404 not found" width="642" height="390">
+            <img class="mySlides" src="../Bilder/business.png" alt="404 not found" width="642" height="390">
+        </div>
+
+        <div class="pilot">
+            <div style="text-decoration-line: underline"><h2>Pilot of the past months</h2></div>
+            <img src="../Bilder/eivind.jpg" alt="Eivind Ajer Olsen" height="257">
+            <div>
+                <p>Because of outstanding performance,
+                    Eivind Ajer Olsen has been awarded "Pilot of the past months"!
+                    He is most known for his amazing landings, also known as "kissers";)</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000); // Change image every 5 seconds
+            }
+        </script>
+
+    <br>
+
+    <div class="news_head">
+            <h2>Nyheter</h2>
+        </div>
+
+    
+    <div class="row">
+        <div class="column">
+            <h3 style="text-decoration-line: underline">Bekrefter ordre på Airbus A380</h3>
+            <p>I en ny pressemelding sier SAS at de har bestilt 2 nye fly av typen Airbus A380-400 Gold.
+                Dette skal være en ny "limited edition" versjon, som er langt bedre enn de tradisjonelle 
+                A380.
+            </p>
+        </div>
+
+        <div class="column">
+            <h3 style="text-decoration-line: underline">Nils Ajer Olsen kåret til <br> "Employee of the year"</h3>
+        </div>
+
+        <div class="column">
+            <h3 style="text-decoration-line: underline">Bjørn Kjos kan ryke og reise</h3>
+            <p>Som alltid går det dårlig for Norwegian. I går kveld ramla sammen hjulstellet,
+                samt cockpiten til Norwegian sitt Dreamliner fly. Som vanlig skyldes det på Rolls Royce motorene,
+                men alle vet at det handler om dårlig vedlikehold innad i Norwegian. Med dette kan Bjørn Kjos like 
+                greit ryke og reise sammen med Dreamlineren sin! <br>
+                <b>(Sjekk ut hva "Ryk og reis" knappen gjør i navigasjonslinjen)</b>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,11 @@
+body {
+    font-family: "Century Gothic", arial, sans-serif;
+    background-color: cornflowerblue;
+    margin: none;
+}
+
+canvas {
+    background-color: black;
+    display: block;
+    margin: auto;
+}

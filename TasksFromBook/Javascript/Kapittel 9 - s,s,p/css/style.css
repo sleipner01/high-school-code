@@ -1,0 +1,31 @@
+body {
+    background-color: #ecf0f1;
+    font-family: "Century Gothic", arial, sans-serif;
+    margin: 4px;
+    width: 100%;
+}
+
+.innpakning {
+    display: flex;
+    flex-direction: row;
+}
+
+.spiller1 {
+    order: 1;
+    flex-basis: 50%;
+}
+
+.spiller2 {
+    order: 2;
+    flex-basis: 50%;
+    border-left: solid 2px #666;
+}
+
+#maskin {
+    margin-left: 110px;
+}
+
+#stein, #saks, #papir {
+    cursor: pointer;
+    border: solid 2px transparent;
+}
